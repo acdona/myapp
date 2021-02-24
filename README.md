@@ -15,4 +15,4 @@ Thanks to Microsoft for making the [**Visual Studio Code**](https://code.visuals
 
 ## License
 
-Open source software licensed under [licença MIT](/LICENSE).
+Open source software licensed under [license MIT](/LICENSE).
