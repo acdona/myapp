@@ -1,18 +1,28 @@
 {
-    "description": "ACD Projeto Oficina",
+    "description": "AMACD PHP basic project",
     "name": "myapp/app",
+    "minimum-stability": "dev",
+    "license": "MIT",
     "authors": [
         {
             "name": "Antonio Carlos Dona",
-            "email": "webmaster@amacd.com.br"
+            "email": "webmaster@amacd.com.br",
+            "role": "Developer",
+            "homepage": "https://amacd.com.br"
         }
     ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
     "autoload": {
         "psr-4": {
             "Core\\": "core",
             "App\\": "app"
             
-        }
+        },
+        "files": [
+            "core/Config.php"
+        ]
     },
     "require": {}
 }

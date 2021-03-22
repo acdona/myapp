@@ -13,7 +13,7 @@
     <!-- desativa estilo de toque padrão dos navegadores -------------------------------------------------------------------- -->
     <meta name=    "msapplication-tap-highlight"  content="no">
     <!-- Viewport para controlar o layout em navegadores de dispositivos móveis. Colocando ", shrink-to-fit=no" para bootstrap-->
-    <meta name=    "viewport"                     content="width=device-width, initial-scale=1" , shirink-to-fit=no>
+    <meta name=    "viewport"                     content="width=device-width, initial-scale=1" , shrink-to-fit=no>
     <!-- Define o autor da  ------------------------------------------------------------------------------------------------- -->
     <meta name=    "author"                       content="Antonio Carlos Doná">
     <!-- Define uma descrição sobre o que o site é relacionado -------------------------------------------------------------- -->
