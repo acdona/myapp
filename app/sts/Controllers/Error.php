@@ -20,8 +20,11 @@ class Error
     {
         
         $this->data = [];
-        $viwError = new \App\sts\Models\StsError;
-        /** Load View Home */
+        /** Loading the Model  */
+        $viewError = new \App\sts\Models\StsError;
+        $viewError->index();
+        
+        /** Loading the View error */
         $loadView = new \Core\ConfigView("sts/Views/error/error", $this->data);
         $loadView->render();
     }

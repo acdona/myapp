@@ -4,7 +4,7 @@ namespace App\sts\Models;
 
 
 /**
- * StsHome Models Responsible for homepage 
+ * StsHome Models Responsible for loading the homepage 
  *
  * @version 1.0
  *

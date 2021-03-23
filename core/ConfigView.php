@@ -1,10 +1,8 @@
 <?php
 namespace Core;
 
-//Clique CRTL + ALT + G para inserir o namespace
-
 /**
- * Classe ConfigView responsável por 
+ * ConfigView class responsible for loading the view 
  *
  * @version 1.0
  *
@@ -16,7 +14,7 @@ namespace Core;
 class ConfigView
 {
 
-       /** @var string $noma Receives the VIEW address that should be loaded */
+       /** @var string $name Receives the VIEW address that should be loaded */
        private string $name;
        /** @var array $data Receive data to send VIEW */
        private array $data;
@@ -43,6 +41,7 @@ class ConfigView
            if(file_exists('app/' . $this->name . '.php')){
                include 'app/sts/Views/include/header.php';
                include 'app/sts/Views/include/sidebar.php';
+               include 'app/sts/Views/include/menu.php';
                include 'app/' . $this->name . '.php';
                include 'app/sts/Views/include/footer.php';
                include 'app/sts/Views/include/libraries_js.php';
@@ -50,8 +49,8 @@ class ConfigView
                // die("Erro: Por favor tente novamente. Caso o problema persista, entre em contato com o administrador " . EMAILADM . "<br>");
               echo "Erro ao carregar a view: {$this->name}";
               // when finished delete the lines above -> only  development version
-              // $urlDestino = URL . "error/index";
-              // header("Location: $urlDestino");
+              // $urlRedirect = URL . "error/index";
+              // header("Location: $urlRedirect");
            }
        }
 

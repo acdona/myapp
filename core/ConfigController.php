@@ -88,9 +88,6 @@ class ConfigController extends Config
             $this->urlParameter = "";
      
         }
-
-        /** testing */
-    
     }
    
     private function slugController($slugController) {

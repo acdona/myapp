@@ -17,7 +17,7 @@ class StsError
     /** @var array $dataError Receives data that is returned from the database */
     private array $dataError;
 
-    public function view() {
+    public function index() {
         
         // $viewError = new \App\sts\Models\helper\StsRead();
         // $viewError->fullRead("SELECT title_error, description, image_error

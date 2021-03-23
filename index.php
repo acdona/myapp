@@ -9,7 +9,7 @@
     //define('123456', true);
 
     // Loads the autload
-    require './vendor/autoload.php';
+    require __DIR__ . "/vendor/autoload.php";
     
     // Assing a class route nickname
     use Core\ConfigController as Home;

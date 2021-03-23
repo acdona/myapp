@@ -16,15 +16,15 @@ class Home
 {
     
     /** @var array $data Receives the data that must be sent to VIEW*/
-    private array $data;
-
+    private array $data = [];
+    
     /**
      * Instantiate MODELS and receive feedback
      * 
      * @ return void
      */
     public function index() : void {   
-        $this->data = [];
+      
          /** Load StsHome Models */   
         $home = new \App\sts\Models\StsHome();
         $home->index();
@@ -32,9 +32,6 @@ class Home
         /** Load View Home */
         $loadView = new \Core\ConfigView("sts/Views/home/home", $this->data);
         $loadView->render();
-
-        
-
 
     }
 
